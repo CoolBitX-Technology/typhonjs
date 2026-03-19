@@ -24,7 +24,7 @@
     "lint:fix": "eslint --fix 'src/**/*.ts'",
     "test": "ts-mocha tests/**/*.spec.ts",
     "docs": "rm -rf docs && typedoc",
-    "deploy": "npm publish"
+    "deploy": "yarn install && yarn build && npm publish --access public"
   },
   "author": "CoolWallet",
   "license": "Apache-2.0",
