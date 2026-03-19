@@ -10,6 +10,32 @@ $ git checkout cbx
 $ git checkout -b feature/xxx # create new branch from cbx
 ```
 
+# Develop
+
+```
+yarn install
+yarn test
+```
+
+# Bundle js
+
+```
+yarn build
+```
+
+# Deploy
+
+- Get the npm credentials from 1Password: `https://start.1password.com/open/i?a=CGQKO46HGZDUHI7PFEQCOHKGOY&v=xwwjaoahqx2weou5zjmidzijva&i=4x7ckqzkkvpq2zzmge4hirvupi&h=cbxio.1password.com`
+- Bump the version in `package.json` by incrementing the `cbx.x` suffix by 1 (e.g. `3.0.1-cbx.0` → `3.0.1-cbx.1`).
+- Run login and deploy in order:
+
+```
+npm login
+yarn deploy
+```
+
+- After deploying, create a GitHub Release (add the corresponding tag and release notes).
+
 # Yarn install troubleshooting
 
 If you see the `packageManager: yarn@4.1.0` message (Yarn v1 vs Corepack), enable Corepack and activate the required Yarn version:
