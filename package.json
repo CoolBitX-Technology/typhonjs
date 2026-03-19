@@ -1,6 +1,6 @@
 {
-  "name": "@stricahq/typhonjs",
-  "version": "3.0.1",
+  "name": "@coolwallet-app/typhonjs",
+  "version": "3.0.1-cbx.0",
   "description": "Pure JS Cardano Wallet library",
   "main": "dist/index.js",
   "keywords": [
@@ -12,20 +12,21 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/StricaHQ/typhonjs.git"
+    "url": "https://github.com/CoolBitX-Technology/typhonjs.git"
   },
   "bugs": {
-    "url": "https://github.com/StricaHQ/typhonjs/issues"
+    "url": "https://github.com/CoolBitX-Technology/typhonjs/issues"
   },
-  "homepage": "https://github.com/StricaHQ/typhonjs#readme",
+  "homepage": "https://github.com/CoolBitX-Technology/typhonjs/tree/cbx#readme",
   "scripts": {
     "build": "rm -rf dist && tsc && webpack",
     "lint": "eslint 'src/**/*.ts'",
     "lint:fix": "eslint --fix 'src/**/*.ts'",
     "test": "ts-mocha tests/**/*.spec.ts",
-    "docs": "rm -rf docs && typedoc"
+    "docs": "rm -rf docs && typedoc",
+    "deploy": "npm publish"
   },
-  "author": "Strica",
+  "author": "CoolWallet",
   "license": "Apache-2.0",
   "dependencies": {
     "@stricahq/cbors": "1.0.2",
