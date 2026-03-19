@@ -10,6 +10,12 @@ $ git checkout cbx
 $ git checkout -b feature/xxx # create new branch from cbx
 ```
 
+# Bundle js
+
+```
+yarn build
+```
+
 # Yarn install troubleshooting
 
 If you see the `packageManager: yarn@4.1.0` message (Yarn v1 vs Corepack), enable Corepack and activate the required Yarn version:
